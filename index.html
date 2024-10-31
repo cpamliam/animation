@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À venir...</title>
+    <!-- Lien vers la police Roboto via Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #323232;
+        }
+        h1 {
+            font-size: 2em;
+            color: #ffc009;
+            margin: 0 0 20px;
+        }
+        /* Style du loader */
+        .loader {
+            width: 70px;
+            aspect-ratio: 2;
+            background:
+                radial-gradient(farthest-side, #000 90%, #0000) 0 0/8px 8px,
+                linear-gradient(#fff 0 0) 100% 0/30px 10px,
+                linear-gradient(#fff 0 0) 0 100%/30px 10px,
+                repeating-linear-gradient(90deg, #fff 0 10px, #0000 0 30px);
+            background-repeat: no-repeat;
+            animation: l6 2s infinite;
+        }
+        @keyframes l6 {
+            0%    {background-position: left 1px bottom 1px, 100% 0, 0 100%, 0 0}
+            12.5% {background-position: left 50% bottom 1px, 100% 0, 0 100%, 0 0}
+            25%   {background-position: left 50% top 1px, 100% 0, 0 100%, 0 0}
+            37.5% {background-position: right 1px top 1px, 100% 0, 0 100%, 0 0}
+            50%   {background-position: right 1px bottom 1px, 0 0, 100% 100%, 0 0}
+            62.5% {background-position: right 50% bottom 1px, 0 0, 100% 100%, 0 0}
+            75%   {background-position: right 50% top 1px, 0 0, 100% 100%, 0 0}
+            87.5% {background-position: left 1px top 1px, 0 0, 100% 100%, 0 0}
+            100%  {background-position: left 1px bottom 1px, 100% 0, 0 100%, 0 0}
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader intégré en dessous du texte -->
+    <div class="loader"></div>
+</body>
+</html>
